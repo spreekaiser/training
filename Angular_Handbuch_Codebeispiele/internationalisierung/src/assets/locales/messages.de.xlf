@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="5910995102168312154" datatype="html">
+        <source>Hallo Welt!</source>
+        <target>Hallo Welt!</target>
+      </trans-unit>
+      <trans-unit id="4210189910609779169" datatype="html">
+        <source>Hallo <x id="INTERPOLATION"/></source>
+        <target>Hallo <x id="INTERPOLATION"/></target>
+      </trans-unit>
+      <trans-unit id="4203237813383839934" datatype="html">
+        <source>GREETING<x id="INTERPOLATION"/></source>
+        <target>Hallo <x id="INTERPOLATION"/></target>
+        <note priority="1" from="description">The greeting the user sees on the main page</note>
+        <note priority="1" from="meaning">User greeting</note>
+      </trans-unit>
+      <trans-unit id="7142462987586962689" datatype="html">
+        <source>Übersetzungstechniken</source>
+        <target>Übersetzungstechniken</target>
+        <note priority="1" from="description">The title for the first tab, that demonstrates basic translation techniques</note>
+      </trans-unit>
+      <trans-unit id="f02cceb4994d72a638cfa6a859b6a5098cf81830" datatype="html">
+        <source>GREETING<x id="INTERPOLATION"/></source>
+        <target>Hallo <x id="INTERPOLATION"/> !!!11!</target>
+      </trans-unit>
+            <trans-unit id="462003550721248162" datatype="html">
+              <source><x id="START_PARAGRAPH" ctype="x-p"/>Ich bin ein Text der über<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+                      <x id="START_PARAGRAPH" ctype="x-p"/>mehrere Paragraphen verteilt ist<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+               </source>
+              <target><x id="START_PARAGRAPH" ctype="x-p"/>Ich bin ein Text der über<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+                      <x id="START_PARAGRAPH" ctype="x-p"/>mehrere Paragraphen verteilt ist<x id="CLOSE_PARAGRAPH" ctype="x-p"/>
+               </target>
+              <note priority="1" from="description">multiple element examples</note>
+            </trans-unit>
+
+      <trans-unit id="6086368477922189745" datatype="html">
+        <source>Aufgabe hinzufügen...</source>
+        <target>Aufgabe hinzufügen...</target>
+      </trans-unit>
+      <trans-unit id="2448946013517819470" datatype="html">
+        <source>Alle Aufgaben erledigt</source>
+        <target>Alle Aufgaben erledigt</target>
+      </trans-unit>
+      <trans-unit id="8910866857603643246" datatype="html">
+        <source>Eine Aufgabe</source>
+        <target>Eine Aufgabe</target>
+      </trans-unit>
+      <trans-unit id="570297687449152109" datatype="html">
+        <source>Einige Aufgaben</source>
+        <target>Einige Aufgaben</target>
+      </trans-unit>
+      <trans-unit id="1838799855506883074" datatype="html">
+        <source><x id="INTERPOLATION"/> Aufgaben</source>
+        <target><x id="INTERPOLATION"/> Aufgaben</target>
+      </trans-unit>
+      <trans-unit id="4201209168093674298" datatype="html">
+        <source>Mehr als 10 Aufgaben</source>
+        <target>Mehr als 10 Aufgaben</target>
+      </trans-unit>
+      <trans-unit id="8270230474478005218" datatype="html">
+        <source>Anrede</source>
+        <target>Anrede</target>
+      </trans-unit>
+      <trans-unit id="413791584176808512" datatype="html">
+        <source>--- Bitte auswählen ---</source>
+        <target>--- Bitte auswählen ---</target>
+      </trans-unit>
+      <trans-unit id="1210114387614013719" datatype="html">
+        <source>Herr</source>
+        <target>Herr</target>
+      </trans-unit>
+      <trans-unit id="268869938263765225" datatype="html">
+        <source>Frau</source>
+        <target>Frau</target>
+      </trans-unit>
+      <trans-unit id="6278737578310385428" datatype="html">
+        <source>Vorname</source>
+        <target>Vorname</target>
+      </trans-unit>
+      <trans-unit id="3112560000750552205" datatype="html">
+        <source>Nachname</source>
+        <target>Nachname</target>
+      </trans-unit>
+      <trans-unit id="2721806142807617942" datatype="html">
+        <source>
+          Registrieren
+        </source>
+        <target>
+          Registrieren
+        </target>
+      </trans-unit>
+      <trans-unit id="7818755846177884937" datatype="html">
+        <source>Sehr geehrter Herr</source>
+        <target>Sehr geehrter Herr</target>
+      </trans-unit>
+      <trans-unit id="1026020215395478970" datatype="html">
+        <source>Sehr geehrte Frau</source>
+        <target>Sehr geehrte Frau</target>
+      </trans-unit>
+      <trans-unit id="8410297820482021689" datatype="html">
+        <source> <x id="INTERPOLATION"/>. Vielen Dank für Ihre Registrierung!</source>
+        <target> <x id="INTERPOLATION"/>. Vielen Dank für Ihre Registrierung!</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

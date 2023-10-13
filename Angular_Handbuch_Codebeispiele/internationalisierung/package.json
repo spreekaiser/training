@@ -1,0 +1,50 @@
+{
+  "name": "internationalisierung",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "serve:de": "ng serve --configuration=de",
+    "serve:fr": "ng serve --configuration=fr",
+    "build:de": "ng build --configuration=de",
+    "build:fr": "ng build --configuration=fr",
+    "build:all": "ng build --localize &&  npm run copy-index",
+    "copy-index": "copyfiles -f src/static/index.html dist/internationalisierung",
+    "build-all2": "npm run build-de && npm run build-fr && npm run copy-index",
+    "start-dist": "live-server dist/internationalisierung",
+    "translate": "ng extract-i18n --output-path src/assets/locales"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "~13.0.0",
+    "@angular/common": "~13.0.0",
+    "@angular/compiler": "~13.0.0",
+    "@angular/core": "~13.0.0",
+    "@angular/forms": "~13.0.0",
+    "@angular/platform-browser": "~13.0.0",
+    "@angular/platform-browser-dynamic": "~13.0.0",
+    "@angular/router": "~13.0.0",
+    "rxjs": "~7.4.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.11.4"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~13.0.1",
+    "@angular/cli": "~13.0.1",
+    "@angular/compiler-cli": "~13.0.0",
+    "@angular/localize": "^13.0.1",
+    "@types/jasmine": "~3.10.0",
+    "@types/node": "^12.11.1",
+    "copyfiles": "^2.4.1",
+    "jasmine-core": "~3.10.0",
+    "karma": "~6.3.0",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage": "~2.0.3",
+    "karma-jasmine": "~4.0.0",
+    "karma-jasmine-html-reporter": "~1.7.0",
+    "typescript": "~4.4.3"
+  }
+}

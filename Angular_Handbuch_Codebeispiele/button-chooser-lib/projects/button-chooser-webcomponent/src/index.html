@@ -1,0 +1,15 @@
+<body>
+  <ch-button-chooser-component id="first-chooser">
+  </ch-button-chooser-component>
+
+  <script>
+
+    const chooser = document.getElementById('first-chooser');
+    chooser.choices = ['yes', 'no'];
+    chooser.addEventListener('valueChanged', function(e) { console.log(e) });
+
+   // const element = document.createElement('my-first-angular-element');
+ //   document.body.appendChild(element);
+  </script>
+  
+</body>

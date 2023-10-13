@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+router-outlet + * {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+@import "./theme";
+
+@include mat.core();
+@include mat.all-component-themes($theme);
+
+.dark-theme {
+  @include mat.all-component-themes($dark-theme);
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

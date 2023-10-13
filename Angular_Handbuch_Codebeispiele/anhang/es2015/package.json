@@ -1,0 +1,25 @@
+{
+  "name": "es2015",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "live-server": "./node_modules/.bin/live-server .",
+    "watch": "babel src -d dist --watch",
+    "start": "concurrent \"npm run watch\" \"npm run live-server\" "
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/plugin-transform-modules-systemjs": "^7.15.4",
+    "concurrently": "1.0.0",
+    "live-server": "^1.2.1",
+    "install": "^0.5.2"
+  },
+  "dependencies": {
+    "@babel/core": "^7.15.8",
+    "systemjs": "^6.10.3",
+    "systemjs-babel": "^0.3.1"
+  }
+}

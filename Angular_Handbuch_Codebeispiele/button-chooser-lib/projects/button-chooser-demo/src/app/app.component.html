@@ -1,0 +1,32 @@
+
+<h1>Button Chooser Demo</h1>
+
+<h2>Styling über BEM</h2>
+
+<form novalidate (ngSubmit)="register(form.value)" #form="ngForm" class="blue-form">
+  <label>Welchen Library-Ansatz bevorzugen Sie?</label>
+  <ch-button-chooser-bem [choices]="choices"
+    name="answer"[(ngModel)]="answer">
+  </ch-button-chooser-bem>
+</form>
+
+<h2>Styling über CSS-Variablen</h2>
+
+<form novalidate (ngSubmit)="register(form.value)" #form="ngForm" class="purple-form">
+  <label>Welchen Library-Ansatz bevorzugen Sie?</label>
+  <ch-button-chooser [choices]="choices"
+    name="answer"[(ngModel)]="answer">
+  </ch-button-chooser>
+</form>
+
+
+<div>Antwort: {{answer}}</div>
+
+<h1>Button-Chooser per WebComponent einbinden</h1>
+
+<ch-button-chooser-component [choices]="choices"
+                             (valueChanged)="valueChanged($any($event).detail)">
+</ch-button-chooser-component>
+
+<div>Antwort aus der WebComponent: {{answerFromWebComponent}}</div>
+

@@ -1,0 +1,6 @@
+<h3>Video Bibliothek</h3>
+<ch-search-bar (searchResultChanged)="items = $event"></ch-search-bar>
+<div class="search-result" *ngFor="let result of items">
+   <img src={{result.poster}}>
+  <span class="title">{{result.title}}</span>
+</div>
