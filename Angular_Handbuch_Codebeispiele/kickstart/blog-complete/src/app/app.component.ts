@@ -1,14 +1,13 @@
-import {Component} from '@angular/core';
-import {initialEntries} from './models/initialEntries';
-import {BlogEntry} from './models/blog-entry';
+import { Component } from '@angular/core';
+import { initialEntries } from './models/initialEntries';
+import { BlogEntry } from './models/blog-entry';
 
 @Component({
   selector: 'app-root',
-  templateUrl: 'app.component.html'
+  templateUrl: 'app.component.html',
 })
 export class AppComponent {
-
-  entries: BlogEntry[] = [];
+  entries: Array<BlogEntry> = [];
 
   constructor() {
     this.entries = initialEntries;
@@ -22,4 +21,3 @@ export class AppComponent {
     this.entries.push(entry);
   }
 }
-

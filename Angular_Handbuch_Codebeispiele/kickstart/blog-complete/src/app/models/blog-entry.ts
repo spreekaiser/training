@@ -1,5 +1,5 @@
 export class BlogEntry {
-  title = '';
-  text = '';
-  image = '';
+  title: string = '';
+  text: string = '';
+  image: string = '';
 }
