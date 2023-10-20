@@ -1,0 +1,23 @@
+li {
+  list-style-type: none;
+}
+
+p {
+  margin: 0;
+}
+
+.date-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.single-event {
+  margin-left: 10px;
+}
+
+.event-title {
+  width: 200px;
+  margin-bottom: 0.5em;
+}

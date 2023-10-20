@@ -1,4 +1,43 @@
-<p>event-list works!</p>
-<ul>
-  <li *ngFor="let event of events">{{ event.name }} - {{ event.date }}</li>
-</ul>
+<div *ngFor="let group of groupedEvents">
+  <h3>{{ group.date | date : "dd. MMMM yyyy" }}</h3>
+  <div class="date-group">
+    <div *ngFor="let event of group.events" class="single-event">
+      <h4 class="event-title">
+        {{ event.title }}
+      </h4>
+      <div class="event-image">
+        <ng-container *ngIf="event.flyerFront; else dummyImage">
+          <img
+            [src]="event.flyerFront"
+            alt=""
+            style="width: 200px; height: 200px"
+          />
+        </ng-container>
+        <ng-template #dummyImage>
+          <img
+            [src]="
+              'https://dummyimage.com/200x200/000/fff.jpg&text=London+Event'
+            "
+            alt=""
+          />
+        </ng-template>
+      </div>
+      <p>
+        <strong>Ort: </strong>
+        <a
+          [href]="
+            'https://www.google.com/maps/search/?api=1&query=' +
+            event.venue.direction
+          "
+          target="_blank"
+          >{{ event.venue.name }}</a
+        >
+      </p>
+      <p>
+        <strong>Starts:</strong>
+        {{ event.startTime | timeFormat }}
+      </p>
+      <p><strong>Ends:</strong> {{ event.endTime | timeFormat }}</p>
+    </div>
+  </div>
+</div>
