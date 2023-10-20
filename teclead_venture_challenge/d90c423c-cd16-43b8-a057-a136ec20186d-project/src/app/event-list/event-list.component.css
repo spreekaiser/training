@@ -15,9 +15,13 @@ p {
 
 .single-event {
   margin-left: 10px;
+  border: 1px solid lightgrey;
+  padding: 0.5em;
 }
 
 .event-title {
   width: 200px;
-  margin-bottom: 0.5em;
+  height: 3em;
+  margin: 0 0 0.5em 0;
+  border: 1px solid 000;
 }
